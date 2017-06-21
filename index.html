@@ -1,1 +1,71 @@
-This is an HTML file.
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>coffeeTalk</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Patrick+Hand+SC" rel="stylesheet">
+  <style>
+    body {
+      margin: 0px;
+      background: #000;
+    }
+
+    #bg_container {
+      opacity: 1;
+      height: 100%;
+      overflow:auto;
+      clip-path: polygon(0 15%, 100% 15%, 100% 75%, 75% 75%, 75% 88%, 57% 75%, 0% 75%);
+      position:static;
+    }
+
+    #bg {
+      width: 100%;
+      height: 900px;
+    }
+
+    #title {
+      position: absolute;
+      top: 0px;
+      padding: 0px;
+      color: sienna;
+      text-shadow: #000 0px 0px;
+      z-index: 1;
+      font-family: 'Patrick Hand SC', cursive;
+      font-size: 90px;
+      top: 30%;
+      left: 38%;
+      background: rgba(0,0,0,.6);
+      background-blend-mode: darken;
+      padding-right: 20px;
+      padding-left: 20px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+
+    #subtitle {
+      position:absolute;
+      padding: 0px;
+      color: sienna;
+      z-index: 1;
+      font-family: 'Open Sans', sans-serif;
+      font-size: 40px;
+      left: 25%;
+      top: 22%;
+      background: rgba(0,0,0,.66);
+    }
+  </style>
+</head>
+
+<body>
+  <div id="bg_container">
+    <iframe id="bg" src="https://www.youtube.com/embed/CqRBS19HjRQ?autoplay=1&amp;controls=0&amp;loop=1&amp;showinfo=0&amp;modestbranding=1&amp;disablekb=1&amp;enablejsapi=1&amp;playlist=CqRBS19HjRQ" frameborder="0"></iframe>
+
+  </div>
+  <div>
+    <h1 id="title">coffeeTalk</h1>
+    <h2 id="subtitle">come for the coffee, stay to chat</h2>
+  </div>
+</body>
+
+</html>
